@@ -75,7 +75,7 @@ header nav ul {
 
 /* Mission */
 
-#Mission{
+#mission{
     height: 30rem;
     display: flex;
     flex-direction: column;
@@ -89,10 +89,10 @@ header nav ul {
     max-width: 100%;
 }
 
-#Mission h2{
+#mission h2{
     line-height: 12rem;
 }
-#Mission p{
+#mission p{
     font-size: 1.5rem;
     color: white;
 }
@@ -100,7 +100,7 @@ header nav ul {
 
 /* Portfolio */
 
-#Portfolio{
+#portfolio{
     margin-top: 2.5%;
     height: 75rem;
     display: flex;
@@ -134,7 +134,7 @@ header nav ul {
 
 /*Future Projects */
 
-#Future {
+#future {
     padding-top: 2%;
     height: 40rem;
     display: flex;
@@ -152,7 +152,7 @@ header nav ul {
     line-height: 3rem;
 }
 
-#Future h3{
+#future h3{
     font-size: 2rem;
     font-weight: bold;
     text-decoration: underline;
@@ -176,7 +176,7 @@ header nav ul {
 
 /*Team Section */
 
-#Team {
+#team {
     padding-top: 2%;
     height: 40rem;
     display: flex;
@@ -241,6 +241,19 @@ footer h3 {
 
 footer p {
     font-size: 1.5rem;
+}
+
+footer a {
+    color: black;
+}
+
+footer a:hover {
+    color: blue;
+    cursor: grab;
+}
+
+footer a:visited {
+    color: darkolivegreen;
 }
 
 .footer2 {
