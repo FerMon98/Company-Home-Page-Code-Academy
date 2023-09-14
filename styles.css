@@ -1,0 +1,97 @@
+/* General rules */    /* */
+@font-face {
+    font-family: 'Lora';
+    font-style: italic;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/lora/v32/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-MoFoq92nA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html{
+    font-size: 16px;
+    background-color: lightgoldenrodyellow;
+    font-family: "Lora";
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/*HEADER */
+
+header {
+    margin: 2% 3%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(Resources/Elprecioso.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    opacity: 0.9;
+    border-radius: 10rem;
+}
+
+header h1 {
+    line-height: 10rem;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+header img {
+    justify-content: flex-end;
+    height: 30%;
+}
+
+header nav ul {
+    width: 50rem;
+}
+
+.nav-bar{
+    margin-top: 1.5%;
+    display: inline-flex;
+    justify-content: space-around;
+    text-decoration: underline;
+    font-size: 1.75rem;
+}
+
+
+/* Mission */
+
+.Mission{
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(Resources/Zaragoza\ cathedral.jpg);
+    background-position: 2% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+}
+
+.Mission h2{
+    line-height: 15rem;
+}
+.Mission p{
+    font-size: 1.75rem;
+    color: white;
+}
+
+
+/* Portfolio */
+
+.Portfolio{
+    margin-top: 2.5%;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
