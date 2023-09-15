@@ -22,7 +22,7 @@ h2 {
 
 header {
     margin: 2% 3%;
-    height: 15rem;
+    height: 15em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,12 +33,12 @@ header {
     background-size: contain;
     background-position: right;
     opacity: 0.9;
-    border-radius: 10rem;
+    border-radius: 10em;
 }
 
 header h1 {
-    line-height: 10rem;
-    font-size: 3rem;
+    line-height: 3em;
+    font-size: 3em;
     font-weight: bold;
     color: rgb(21, 107, 21);
 }
@@ -48,7 +48,7 @@ header img {
 }
 
 header .desktop ul {
-    width: 50rem;
+    width: 40em;
     color: black;
 }
 
@@ -57,7 +57,7 @@ header .desktop ul {
     display: inline-flex;
     justify-content: space-around;
     text-decoration: underline;
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 .navBarDesktop li a {
@@ -86,7 +86,7 @@ header .desktop ul {
     }
     
     header h1{
-        font-size: 2.5rem;
+        font-size: 2.5em;
         color: white;
     }
 
@@ -109,8 +109,8 @@ header .desktop ul {
     }
 
     header h1{
-        font-size: 2rem;
-        line-height: 3rem;
+        font-size: 2em;
+        line-height: 2em;
     }
     
     .desktop {
@@ -139,7 +139,7 @@ header .desktop ul {
 /* Mission */
 
 #mission{
-    height: 30rem;
+    height: 35em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -154,12 +154,12 @@ header .desktop ul {
 
 #mission h2{
     padding: 0 2%;
-    line-height: 10rem;
+    line-height: 6em;
     border: 10px double ;
 }
 #mission p{
     margin-top: 5%;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     color: white;
 }
 
@@ -183,14 +183,14 @@ header .desktop ul {
     }
 
     #mission h2{
-        font-size: 1.75rem;
+        font-size: 1.75em;
         color: white;
-        line-height: 10rem;
+        line-height: 8em;
     }
 
     #mission p {
         padding: 0 5%;
-        font-size: 1.25rem;
+        font-size: 1.25em;
     }
 }
 
@@ -198,13 +198,13 @@ header .desktop ul {
 
 #portfolio{
     margin-top: 2.5%;
-    height: 75rem;
+    height: 75em;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-size: 1.75rem;
-    line-height: 4rem;
+    font-size: 1.75em;
+    line-height: 4em;
 }
 
 .pictures{
@@ -231,7 +231,7 @@ header .desktop ul {
 
 @media only screen and (max-width: 1500px){
     #portfolio {
-        height: 90rem;
+        height: 90em;
     }
 
     .pictures {
@@ -254,16 +254,17 @@ header .desktop ul {
 
 @media only screen and (max-width: 1000px) {
     #portfolio{
-        height: 120rem;
+        height: 70em;
+        line-height: 2em;
     }
 
     #portfolio h2{
-        font-size: 1.75rem;
+        font-size: 1.5em;
     }
 
     #portfolio p {
-        font-size: 1.25rem;
-        line-height: 2rem;
+        font-size: 1em;
+        line-height: 2em;
     }
 
     .pictures {
@@ -296,7 +297,7 @@ header .desktop ul {
 
 #future {
     padding-top: 2%;
-    height: 40rem;
+    height: 40em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -308,12 +309,12 @@ header .desktop ul {
     max-width: 100%;
     opacity: 0.8;
     color: white;
-    font-size: 1.5rem;
-    line-height: 3rem;
+    font-size: 1.5em;
+    line-height: 3em;
 }
 
 #future h3{
-    font-size: 2rem;
+    font-size: 2em;
     font-weight: bold;
     text-decoration: underline;
     text-decoration-style: wavy;
@@ -338,21 +339,21 @@ header .desktop ul {
 
 @media only screen and (max-width: 1500px) {
     #future h3, h4{
-        font-size: 1.5rem;
+        font-size: 1.5em;
         padding: 0 3%;
     }
 
     #future p{
-        font-size: 1.25rem;
+        font-size: 1.25em;
     }
 }
 
 @media only screen and (max-width: 1100px) {
     #future {
         padding-top: 10%;
-        font-size: 1rem;
-        line-height: 2rem;
-        height: 65rem;
+        font-size: 1em;
+        line-height: 2em;
+        height: 65em;
         background-image: url(Resources/future.jpeg);
         background-position: center;
         background-size: cover;
@@ -360,11 +361,11 @@ header .desktop ul {
     
     #future h2{
         color: black;
-        line-height: 4rem;
+        line-height: 3em;
     }
 
     #future h3, h4{
-        font-size: 1.25rem;
+        font-size: 1.25em;
         padding: 0 3%;
     }
 
@@ -379,14 +380,17 @@ header .desktop ul {
         max-width: 60%;
         margin: 3% 1%;
     }
-    
+
+    .education, .next-stop, .scope p {
+        padding-top: 5%;
+    }
 }
 
 /*Team Section */
 
 #team {
     padding-top: 2%;
-    height: 40rem;
+    height: 40em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -400,8 +404,8 @@ header .desktop ul {
     display: inline-flex;
     justify-content: space-around;
     height: 85%;
-    max-width: 200rem;
-    line-height: 1.5rem;
+    max-width: 200em;
+    line-height: 1.5em;
 }
 
 .teammember {
@@ -411,8 +415,8 @@ header .desktop ul {
 }
 
 .teammember h3 {
-    line-height: 2rem;
-    font-size: 1.3rem;
+    line-height: 2em;
+    font-size: 1.3em;
     font-weight: bold;
     text-decoration: underline;
 }
@@ -435,7 +439,7 @@ header .desktop ul {
 
 @media only screen and (max-width: 760px) {
     #team {
-        height: 80rem;
+        height: 80em;
     }
 
     #team h2{
@@ -471,16 +475,16 @@ header .desktop ul {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    line-height: 4rem;
+    line-height: 4em;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .footer h3 {
-    font-size: 1.75rem;
+    font-size: 1.75em;
 }
 
 .footer p {
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 .footer a {
@@ -499,26 +503,26 @@ header .desktop ul {
 /* Footer Section Media Query */
 @media only screen and (max-width: 1500px){
     .footer {
-        height: 15rem;
+        height: 15em;
     }
 }
 
 @media only screen and (max-width: 760px) {
     .footer {
-        height: 12rem;
-        line-height: 2.5rem;
+        height: 12em;
+        line-height: 2.5em;
     }
 
     .footer h2{
-        font-size: 1.75rem;
+        font-size: 1.75em;
     }
 
     .footer h3 {
-        font-size: 1.25rem;
+        font-size: 1.25em;
     }
     
     .footer p {
-        font-size: 1.15rem;
+        font-size: 1.15em;
     }
 }
 
@@ -528,7 +532,7 @@ header .desktop ul {
 .footer2 {
     padding: 0 0 1% 1%;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-size: 1em;
     align-items: start;
 }
 
@@ -537,7 +541,7 @@ header .desktop ul {
 @media only screen and (max-width: 1500px){
     
     .footer2 p {
-        font-size: 1rem;
+        font-size: 1em;
     }
 }
 
