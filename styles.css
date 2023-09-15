@@ -40,19 +40,19 @@ header h1 {
     line-height: 10rem;
     font-size: 3rem;
     font-weight: bold;
+    color: rgb(21, 107, 21);
 }
 
 header img {
     justify-content: flex-end;
-    height: 30%;
 }
 
-header nav ul {
+header .desktop ul {
     width: 50rem;
     color: black;
 }
 
-.nav-bar{
+.navBarDesktop{
     margin-top: 1.5%;
     display: inline-flex;
     justify-content: space-around;
@@ -60,21 +60,81 @@ header nav ul {
     font-size: 1.5rem;
 }
 
-.nav-bar li a {
+.navBarDesktop li a {
     color: black;
 }
 
-.nav-bar li a:hover{
+.navBarDesktop li a:hover{
     cursor: pointer;
     color: blue;
 }
 
-.nav-bar li a:visited {
+.navBarDesktop li a:visited {
     color: darkolivegreen;
+}
+
+.mobile{
+    display: none;
 }
 
 /* Header Media Query */
 
+@media only screen and (max-width: 1500px){
+    header{
+        background-size: cover;
+        background-position: 0 63%;
+    }
+    
+    header h1{
+        font-size: 2.5rem;
+        color: white;
+    }
+
+   .navBarDesktop li a {
+        color: white;
+    }
+
+    .navBarDesktop li a:visited {
+        color: lightblue;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    header{
+        justify-content: center;
+        color: rgb(21, 107, 21);
+        background-size: cover;
+        border-radius: 0;
+    }
+
+    header h1{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        padding-top: 5%;
+        display: block;
+        width: 100%;
+    }
+    .navBarMobile li a {
+        color: lightblue;
+    }
+    
+    .navBarMobile li a:hover{
+        cursor: pointer;
+        color: blue;
+    }
+    
+    .navBarMobile li a:visited {
+        color: white;
+    }
+}
 
 /* Mission */
 
@@ -93,13 +153,46 @@ header nav ul {
 }
 
 #mission h2{
-    line-height: 12rem;
+    padding: 0 2%;
+    line-height: 10rem;
+    border: 10px double ;
 }
 #mission p{
+    margin-top: 5%;
     font-size: 1.5rem;
     color: white;
 }
 
+/* Mission Media Query */
+
+@media only screen and (max-width: 1500px) {
+    #mission {
+        background-position: 4% 27%;
+    }
+    
+    #mission h2{
+        color: white;
+    }
+
+    
+}
+
+@media only screen and (max-width: 760px) {
+    #mission {
+        background-position: 0% 27%;
+    }
+
+    #mission h2{
+        font-size: 1.75rem;
+        color: white;
+        line-height: 10rem;
+    }
+
+    #mission p {
+        padding: 0 5%;
+        font-size: 1.25rem;
+    }
+}
 
 /* Portfolio */
 
@@ -132,6 +225,70 @@ header nav ul {
     border: 5px solid rgb(15, 5, 82);
     height: 100%;
     max-width: 100%;
+}
+
+/* Portfolio Media Query */
+
+@media only screen and (max-width: 1500px){
+    #portfolio {
+        height: 90rem;
+    }
+
+    .pictures {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .photos {
+        height: 30%;
+        max-width: 90%;
+    }
+
+    .photos-pic {
+        border: 5px solid rgb(15, 5, 82);
+        height: 70%;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #portfolio{
+        height: 120rem;
+    }
+
+    #portfolio h2{
+        font-size: 1.75rem;
+    }
+
+    #portfolio p {
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+
+    .pictures {
+        margin-top: 5%;
+        padding-top: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photos {
+        height: 20%;
+        max-width: 90%;
+    }
+
+    .photos-pic {
+        border: 5px solid rgb(15, 5, 82);
+        height: 70%;
+        max-width: 100%;
+    }
+
+    #Devon {
+        height: 60%;
+        max-width: 100%;
+    }
 }
 
 
@@ -175,6 +332,54 @@ header nav ul {
     max-width: 22%;
     background-color: gray;
     opacity: 0.8;
+}
+
+/* Future Projects Media Query */
+
+@media only screen and (max-width: 1500px) {
+    #future h3, h4{
+        font-size: 1.5rem;
+        padding: 0 3%;
+    }
+
+    #future p{
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #future {
+        padding-top: 10%;
+        font-size: 1rem;
+        line-height: 2rem;
+        height: 65rem;
+        background-image: url(Resources/future.jpeg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    #future h2{
+        color: black;
+        line-height: 4rem;
+    }
+
+    #future h3, h4{
+        font-size: 1.25rem;
+        padding: 0 3%;
+    }
+
+    .plans {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .education, .next-stop, .scope {
+        max-width: 60%;
+        margin: 3% 1%;
+    }
+    
 }
 
 /*Team Section */
@@ -226,9 +431,41 @@ header nav ul {
     max-width: 100%;
 }
 
+/* Team Section Media Query */
+
+@media only screen and (max-width: 760px) {
+    #team {
+        height: 80rem;
+    }
+
+    #team h2{
+        padding-top: 10%;
+    }
+
+    .equipo {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+    }
+
+    .teammember {
+        height: 25%;
+        max-width: 100%;
+        margin-top: 1%;
+        padding: 0;
+    }
+
+    .equipopic {
+        border: 5px solid darkcyan;
+        height: 60%;
+        max-width: 100%;
+    }
+}
+
 /* Footer */
 
-footer {
+.footer {
     padding: 3% 0;
     display: flex;
     flex-direction: column;
@@ -238,30 +475,77 @@ footer {
     font-family: 'Times New Roman', Times, serif;
 }
 
-footer h3 {
+.footer h3 {
     font-size: 1.75rem;
 }
 
-footer p {
+.footer p {
     font-size: 1.5rem;
 }
 
-footer a {
+.footer a {
     color: black;
 }
 
-footer a:hover {
+.footer a:hover {
     color: blue;
     cursor: grab;
 }
 
-footer a:visited {
+.footer a:visited {
     color: darkolivegreen;
 }
+
+/* Footer Section Media Query */
+@media only screen and (max-width: 1500px){
+    .footer {
+        height: 15rem;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .footer {
+        height: 12rem;
+        line-height: 2.5rem;
+    }
+
+    .footer h2{
+        font-size: 1.75rem;
+    }
+
+    .footer h3 {
+        font-size: 1.25rem;
+    }
+    
+    .footer p {
+        font-size: 1.15rem;
+    }
+}
+
+
+/* Footer Copyright */
 
 .footer2 {
     padding: 0 0 1% 1%;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.75rem;
+    font-size: 1rem;
     align-items: start;
+}
+
+/* Copyright section Media Query */
+
+@media only screen and (max-width: 1500px){
+    
+    .footer2 p {
+        font-size: 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 760px) {
+    .footer2 {
+        padding: 0 0 1% 5%;
+        font-size: 0.75rem;
+        justify-content: end;
+    }
 }

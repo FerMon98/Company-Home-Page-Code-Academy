@@ -11,11 +11,22 @@
 
 <body>
 
-  <header>
-    <h1><strong>Welcome To My Website!</strong></h1>
+  <!-- Header -->
 
-    <nav>
-      <ul class="nav-bar">
+  <header>
+    <h1><strong>Welcome To Our Website!</strong></h1>
+
+    <nav class="desktop">
+      <ul class="navBarDesktop">
+        <li><a href="#mission"> Mission Statement </a></li>
+        <li><a href="#portfolio"> Portfolio </a></li>
+        <li><a href="#future"> Future Projects </a></li>
+        <li><a href="#team"> Our Team </a></li>
+      </ul>
+    </nav>
+
+    <nav class="mobile">
+      <ul class="navBarMobile">
         <li><a href="#mission"> Mission Statement </a></li>
         <li><a href="#portfolio"> Portfolio </a></li>
         <li><a href="#future"> Future Projects </a></li>
@@ -24,13 +35,17 @@
     </nav>
   </header>
 
-
+ <!-- Main Content -->
   <main>
+
+    <!-- Mission Section -->
+
     <section id="mission">
       <h2>The Ferzk's Project</h2>
       <p>Our main goal is to capture through photography the beauty in all that there is now and is yet to be.</p>
     </section>
 
+    <!-- Portfolio Section -->
 
     <section id="portfolio">
       <h2>Our Portfolio</h2>
@@ -38,7 +53,7 @@
       
       <div class="pictures">
           <div class="photos">
-            <img class="photos-pic" src="Resources/Devon.jpg" alt="Modeling at Primavera Sound">
+            <img class="photos-pic" id="Devon" src="Resources/Devon.jpg" alt="Modeling at Primavera Sound">
             <p>Primavera Sound Model</p>
           </div>
 
@@ -64,9 +79,11 @@
       </div>
     </section>
 
+    <!-- Future Projects Section -->
+
     <section id="future">
       <h2>Future Projects</h2>
-      <p>As we grow and learn we also want to take on customer's request and expand our Horizon</p>
+      <h4>As we grow and learn we also want to take on customer's request and expand our Horizon</h4>
 
       <div class="plans">
           <div class="education">
@@ -86,6 +103,7 @@
       </div>
     </section>
     
+    <!-- Our Team Section -->
 
     <section id="team">
       <h2>Meet Our Team</h2>
@@ -112,12 +130,16 @@
     </section>
   </main>
 
-  <footer>
+  <!-- Main Footer -->
+
+  <footer class="footer">
     <h2>The Ferzk's Experience</h2>
     <h3>Do you have a request in mind? Contact Us!</h3>
     <p><a href="https://mail.google.com/mail/u/0/"> ferzkproject@gmail.com </a></p>
     <p>+34 649711233</p>
   </footer>
+
+  <!-- Copyrighty footer -->
 
   <footer class="footer2">
     <p>copyright The Ferzk's Project S.A 2023</p>
