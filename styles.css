@@ -198,7 +198,7 @@ header .desktop ul {
 
 #portfolio{
     margin-top: 2.5%;
-    height: 75em;
+    height: 60em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -223,7 +223,7 @@ header .desktop ul {
 
 .photos-pic {
     border: 5px solid rgb(15, 5, 82);
-    height: 100%;
+    height: 90%;
     max-width: 100%;
 }
 
@@ -231,17 +231,25 @@ header .desktop ul {
 
 @media only screen and (max-width: 1500px){
     #portfolio {
-        height: 90em;
+        height: 80em;
+        line-height: 2em;
     }
 
     .pictures {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        height: 90%;
+        max-width: 100%;
+        line-height: 0;
+    }
+
+    .pictures p {
+        margin-top: 4%;
     }
 
     .photos {
-        height: 30%;
+        height: 25%;
         max-width: 90%;
     }
 
@@ -252,8 +260,9 @@ header .desktop ul {
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1250px) {
     #portfolio{
+        margin-bottom: 2%;
         height: 70em;
         line-height: 2em;
     }
@@ -313,8 +322,12 @@ header .desktop ul {
     line-height: 3em;
 }
 
+#future h2{
+    font-size: 2.25em;
+}
+
 #future h3{
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
     text-decoration: underline;
     text-decoration-style: wavy;
@@ -323,14 +336,13 @@ header .desktop ul {
 .plans {
     margin-top: 5%;
     display: inline-flex;
-    max-width: 80%;
     justify-content: space-around;
     color: white;
 }
 
 .education, .next-stop, .scope{
     padding: 1.5%;
-    max-width: 22%;
+    max-width: 27%;
     background-color: gray;
     opacity: 0.8;
 }
@@ -390,7 +402,7 @@ header .desktop ul {
 
 #team {
     padding-top: 2%;
-    height: 40em;
+    height: 50em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -401,16 +413,17 @@ header .desktop ul {
 
 .equipo {
     margin-top: 3%;
+    margin-bottom: 5%;
     display: inline-flex;
     justify-content: space-around;
-    height: 85%;
-    max-width: 200em;
+    height: 90%;
+    max-width: 100%;
     line-height: 1.5em;
 }
 
 .teammember {
     height: 70%;
-    max-width: 100%;
+    max-width: 30%;
     padding: 2%;
 }
 
@@ -449,7 +462,7 @@ header .desktop ul {
     .equipo {
         display: flex;
         flex-direction: column;
-        height: 100%;
+        height: 90%;
         justify-content: space-evenly;
     }
 
